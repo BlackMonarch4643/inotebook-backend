@@ -1,11 +1,10 @@
 const mongoose = require("mongoose");
-const User = require("./user");
+
 
 async function run() {
   mongoose
     .connect(
-      "mongodb+srv://inotebook:inotebook46433464@cluster0.wg674vj.mongodb.net/Testing?retryWrites=true&w=majority/Testing"
-    )
+      "mongodb+srv://inotebook:inotebook46433464@cluster0.wg674vj.mongodb.net/iNotebook?retryWrites=true&w=majority")
     .then(() => {
       console.log("Mongo DB is connected");
     });
